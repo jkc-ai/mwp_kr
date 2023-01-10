@@ -11,7 +11,7 @@ pip install googletrans
 ``` 
 python translate_augmenter.py --input-file sample.xlsx --lang en zh-cn
 ```
-번역가능한 언어리스트  ex) --lang key1, key2
+번역가능한 언어리스트  ex) --lang key1 key2
 ```
 {'af': 'afrikaans',
  'sq': 'albanian',
