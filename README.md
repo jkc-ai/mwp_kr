@@ -1,4 +1,5 @@
-# Korean Math Word Problem(한국어 서술형 수학문제 풀이)
+# Korean Math Word Problem  
+(한국어 서술형 수학문제 풀이)
 
 과학기술정보통신부가 주관하고 정보통신기획평가원(IITP)가 주최한 2022년 AI Grand Challenge 5차 3단계(최종) 대회에 활용된   
 소스 코드 공개를 위한 코드 저장소 입니다. 
