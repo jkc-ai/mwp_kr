@@ -2,9 +2,12 @@
 
 ## Installation
 ```
-pip install googletrans
+pip install googletrans pandas textattack
 ```
-
+or 
+```
+pip install -r requirements.txt
+```
 
 ## 다국어 번역기반 증강
 실행 코드 예시
