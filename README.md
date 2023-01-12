@@ -1,4 +1,4 @@
-# Korean Math Word Problem 
+# Korean Math Word Problem (한국어 서술형 수학문제 풀이)
 
 AI Grand Challenge 5차 대회에 활용된 소스 코드 공개를 위한 코드 저장소 입니다. 
 추론 코드 및 훈련 코드는 추후 논문공개와 함께 정리하여 업데이트 할 예정입니다. 
