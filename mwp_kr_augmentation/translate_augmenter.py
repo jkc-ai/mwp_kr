@@ -5,11 +5,10 @@ from aug_func import *
 import pandas as pd
 from googletrans import Translator
 
-
 translator = Translator()
 
-def parse_args():
 
+def parse_args():
     parser = argparse.ArgumentParser(description='input')
     parser.add_argument('--input-file', default='sample.xlsx', help='the dir to save logs and models')
     parser.add_argument('--lang', default='en', help='the dir to save logs and models', nargs='+')
@@ -22,12 +21,13 @@ def parse_args():
 def retranslator_ko(lang, q_org_ko):
     trans_langs = []
     rekos = []
-    for idx, i in enumerate(q_org_ko):        
-        trans_lang = translator.translate(i, dest = lang).text
-        reko = translator.translate(trans_lang, dest = 'ko').text
+    for idx, i in enumerate(q_org_ko):
+        trans_lang = translator.translate(i, dest=lang).text
+        reko = translator.translate(trans_lang, dest='ko').text
         trans_langs.append(trans_lang)
         rekos.append(reko)
     return trans_langs, rekos
+
 
 def refine_augmented_data(lang, src_pd_data):
     refine_q = []
@@ -38,18 +38,18 @@ def refine_augmented_data(lang, src_pd_data):
 
         org_en_nouns, aug_en_nouns = find_en_noun(or_q, aug_q)
         intersection = list(set(aug_en_nouns).difference(set(org_en_nouns)))
-        
-        
+
         org_nums, aug_nums = find_number(or_q, aug_q)
-        
+
         if org_nums == aug_nums and len(intersection) == 0:
             refine_q.append(aug_q)
         else:
             refine_q.append(np.nan)
 
-    dst_pd_data[lang + '-ko-aug'] =  refine_q  
+    dst_pd_data[lang + '-ko-aug'] = refine_q
 
     return dst_pd_data
+
 
 def main():
     args = parse_args()
@@ -62,7 +62,6 @@ def main():
     pd_data, q_org_ko = read_excel(input_file, q_col_name)
 
     for lang in langs:
-
         trans_langs, rekos = retranslator_ko(lang, q_org_ko)
 
         # pd_data[lang] = trans_langs
@@ -71,10 +70,10 @@ def main():
         ################################################################################
         refined_pd_data = refine_augmented_data(lang, pd_data)
 
-
     with pd.ExcelWriter(input_file) as writer:
         refined_pd_data.to_excel(writer)
-        print("save %s" %input_file)
+        print("save %s" % input_file)
+
 
 if __name__ == '__main__':
     main()
