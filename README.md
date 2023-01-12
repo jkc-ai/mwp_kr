@@ -29,9 +29,17 @@
 캐리: 유용균, 고태영, 전태현, 김민종, 임지연, 이상원  
 개인: 조희철, 임소영
 
+## 4. Citation
+@misc{KMWP
+  author       = { .. },
+  title        = {MWP_KR, Solver for Korean Math Word Problems},
+  howpublished = {\url{https://github.com/tunib-ai/KMWP}},
+  year         = {2022},
+}
 
-## 4. License
+## 5. License
 
 mwp_kr is licensed under the terms of the Apache License 2.0.
+
 Copyright 2022 주식회사 젠티, 한국원자력연구원, 조희철, 임소영. All Rights Reserved.
 
