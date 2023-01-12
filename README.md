@@ -33,7 +33,7 @@
 @misc{KMWP
   author       = { .. },
   title        = {MWP_KR, Solver for Korean Math Word Problems},
-  howpublished = {\url{https://github.com/tunib-ai/KMWP}},
+  howpublished = {\url{https://github.com/jkc-ai/mwp_kP},
   year         = {2022},
 }
 
