@@ -32,7 +32,8 @@
 ## 4. Citation
 ```
 @misc{MWP_KR
-  author       = { .. ,Taeil Hur, ..  },
+  author       = { Soyoung Lim, Heecheol Cho, Taeil Hur, Jiyeon Yim, Taeyoung Ko, Tae-Hyun
+Chun, Eunjin Choi, Jiyoung Jeong, Yonggyun Yu, Donghyun Shin, GyeongHwan Jang},
   title        = {MWP_KR, Solver for Korean Math Word Problems},
   howpublished = {\url{https://github.com/jkc-ai/mwp_kr}},
   year         = {2022},
