@@ -31,6 +31,7 @@
 
 
 ## 4. License
-주식회사 젠티, 한국원자력연구원, 조희철, 임소영
 
+mwp_kr is licensed under the terms of the Apache License 2.0.
+Copyright 2022 주식회사 젠티, 한국원자력연구원, 조희철, 임소영. All Rights Reserved.
 
