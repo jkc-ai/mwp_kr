@@ -30,13 +30,14 @@
 개인: 조희철, 임소영
 
 ## 4. Citation
+```
 @misc{KMWP
   author       = { .. },
   title        = {MWP_KR, Solver for Korean Math Word Problems},
-  howpublished = {\url{https://github.com/jkc-ai/mwp_kP},
+  howpublished = {\url{https://github.com/jkc-ai/mwp_kr}},
   year         = {2022},
 }
-
+```
 ## 5. License
 
 mwp_kr is licensed under the terms of the Apache License 2.0.
