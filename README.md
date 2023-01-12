@@ -31,7 +31,7 @@
 
 ## 4. Citation
 ```
-@misc{KMWP
+@misc{MWP_KR
   author       = { .. ,Taeil Hur, ..  },
   title        = {MWP_KR, Solver for Korean Math Word Problems},
   howpublished = {\url{https://github.com/jkc-ai/mwp_kr}},
